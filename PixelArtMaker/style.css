@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 20vh 20vh 60vh;
+    padding: 0 5% 0 5%;
+}
+
+h1,
+h2,
+p,
+label {
+    font-family: 'Amatic SC', cursive;
+}
+
+.container1 {
+    text-align: center;
+}
+
+.container2 {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.container2 input {
+    width: 5em;
+    margin-left: 0.5em;
+}
+
+.settings {
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.container3 {
+    display: flex;
+    margin: auto;
+}
+
+#pixel_canvas {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+}

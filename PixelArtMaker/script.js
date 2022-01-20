@@ -6,23 +6,20 @@ let btn = document.getElementById("btn");
 
 // Creating the grids 
 function makeGrid(x, y) {
-
     //Delete rows to start
     pixel_canvas.innerHTML = ``;
 
     // Loop to insert rows
-    for (let j = 1; j <= y; j++) {
-        var tr = document.createElement("tr");
-        pixel_canvas.appendChild(tr);
+    for (let j = 0; j < y; j++) {
+        let tr = pixel_canvas.insertRow(j);
 
         // Loop to insert the pixel cells
-        for (let i = 1; i <= x; i++) {
-            //Creating a new pixel
-            let pixel = document.createElement("td");
+        for (let i = 0; i < x; i++) {
+            //Creating a new pixel + Defining the parent element, to store the td element in there
+            let pixel = tr.insertCell(i);
+
             //Setting the classname to "pixel"
             pixel.setAttribute('class', 'pixel');
-            // Defining the parent element, to store the td element in there
-            pixel_canvas.appendChild(pixel);
 
             //Adding a click event for each pixel
             pixel.addEventListener('click', function(event) {

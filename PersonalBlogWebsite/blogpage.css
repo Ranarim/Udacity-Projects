@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:wght@200;400&display=swap');
+@import "navbar.css";
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -16,7 +17,7 @@
 }
 
 
-/*NAVBAR Größer als 630px------------------------------------------*/
+/*NAVBAR Größer als 630px------------------------------------------
 
 nav {
     background: #f7f7f7;
@@ -78,7 +79,7 @@ nav .logo {
 }
 
 
-/*NAVBAR Kleiner als 630px*/
+/*NAVBAR Kleiner als 630px
 
 @media (max-width: 630px) {
     nav .main_menu {
@@ -146,9 +147,18 @@ main {
     font-family: Poppins;
     font-weight: 300;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #f7f7f7;
     height: auto;
+}
+
+.introduction img {
+    height: 150px;
+    width: 150px;
+    margin-top: 2em;
+    border-radius: 100%;
 }
 
 .box {
@@ -210,7 +220,26 @@ main {
 
 @media (min-width: 600px) and (max-width: 1110px) {
     .introduction {
-        padding: 3% 20% 3% 20%;
+        width: 100vw;
+        padding: 2em;
+        font-family: Poppins;
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        height: auto;
+        padding: 3% 5% 3% 5%;
+    }
+    .introduction img {
+        height: 200px;
+        width: 200px;
+        margin-left: 2em;
+        border-radius: 100%;
+    }
+    .intro_text {
+        width: max(600px)
     }
     .box {
         display: flex;
@@ -247,6 +276,26 @@ main {
     .introduction {
         padding: 3% 25% 3% 25%;
         font-size: calc((2 - 1) * 0.7vw + 0.6rem);
+        width: 100vw;
+        padding: 2em;
+        font-family: Poppins;
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        height: auto;
+        padding: 1% 5% 1% 5%;
+    }
+    .introduction img {
+        height: 300px;
+        width: 300px;
+        margin-left: 4em;
+        border-radius: 100%;
+    }
+    .intro_text {
+        width: max(600px)
     }
     .box {
         display: flex;

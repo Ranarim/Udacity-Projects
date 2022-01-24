@@ -1,0 +1,126 @@
+.introduction {
+    width: 100vw;
+    padding: 2em;
+    font-family: Poppins;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    height: auto;
+}
+
+.introduction img {
+    height: 150px;
+    width: 150px;
+    margin-top: 2em;
+    border-radius: 100%;
+}
+
+.intro_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro_text p {
+    margin: 1em 0 1em 0;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .introduction {
+        width: 100vw;
+        padding: 2em;
+        font-family: Poppins;
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        height: auto;
+    }
+    .introduction img {
+        height: 200px;
+        width: 200px;
+        margin-left: 2em;
+        border-radius: 100%;
+    }
+    .intro_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .intro_text p {
+        margin: 1em 0 1em 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .introduction {
+        width: 100vw;
+        padding: 2em;
+        font-family: Poppins;
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        height: auto;
+    }
+    .introduction img {
+        height: 300px;
+        width: 300px;
+        margin-left: 2em;
+        border-radius: 100%;
+    }
+    .intro_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: max(500px);
+    }
+    .intro_text p {
+        margin: 1em 0 1em 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .introduction {
+        width: 100vw;
+        padding: 2em;
+        font-family: Poppins;
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        height: auto;
+    }
+    .introduction img {
+        height: 300px;
+        width: 300px;
+        margin-left: 2em;
+        border-radius: 100%;
+    }
+    .intro_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: max(500px);
+    }
+    .intro_text p {
+        margin: 1em 0 1em 0;
+    }
+}
